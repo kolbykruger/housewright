@@ -1,0 +1,46 @@
+.impression {
+    margin-bottom: 0;
+    //box-shadow: $box-shadow-3;
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .group {
+        align-items: center;
+    }
+
+    .flickity-viewport {
+        width: 100%;
+    }
+
+    .details {
+        flex: 2;
+
+        .text {
+            padding: 10vw;
+        }
+    }
+
+    .images {
+        flex: 3;
+
+        .images-item {
+            position: relative;
+            width: 100%;
+
+            .label {
+                position: absolute;
+                bottom: 1em;
+                right: 1em;
+                font-size: 1.25rem;
+
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

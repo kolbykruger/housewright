@@ -1,3 +1,16 @@
+//ScrollMagic
+$(document).ready(function() {
+    var controller = new ScrollMagic.Controller;
+    $("section").each(function() {
+        new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 0.85,
+            reverse: true
+        }).setClassToggle(this, "active").addTo(controller)
+        .addTo(controller);
+    })
+});
+
 //Blog Categories (if a selectbox)
 let blogCategories = {
     elem: document.querySelector('select#blog_categories'),
@@ -46,6 +59,18 @@ $('.carousel .group').flickity({
     pageDots: true,
     imagesLoaded: true,
     autoPlay: 8000,
+});
+
+$('.impression .images').flickity({
+    cellSelector: '.images-item',
+    wrapAround: true,
+    adaptiveHeight: false,
+    cellAlign: 'center',
+    prevNextButtons: false,
+    pageDots: true,
+    imagesLoaded: true,
+    autoPlay: 8000,
+    fade: true
 });
 
 $('.slideshow .container').flickity({

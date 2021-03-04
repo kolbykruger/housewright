@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="robots" content="noindex, nofollow">
 
-    <title>Design | *Site Name*</title>
+    <title>Design | Housewright</title>
 
     <!-- Font Scripts -->
     <script defer type="text/javascript" src="js/fonts.js"></script>
@@ -20,6 +20,7 @@
 
     <!-- External Styles -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/flickity-fade@1.0.0/flickity-fade.css">
 
     <!-- Internal Styles -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -39,34 +40,56 @@
         <div class="container">
             <div class="group">
 
-                <div class="logo">
-                    <a href="index.html" class="force">
-                        <img src="https://eternityatom.com/images/atom_logo.svg" title="Return Home" alt="Logo">
-                    </a>
+                <div class="logo-wrapper">
+                    <div class="logo">
+                        <a href="index.html" class="force">
+                            <img src="https://eternityatom.com/images/atom_logo.svg" title="Return Home" alt="Logo">
+                        </a>
+                    </div>
                 </div>
 
                 <nav class="nav" role="navigation" aria-label="Site Menu">
 
                     <ul>
-                        <li><a href="#">Link</a></li>
-                        <li class="trigger"><a href="#">Link <i class="fal fa-caret-down" aria-hidden="true"></i></a>
+                        <li class="trigger">
+                            <a href="#">Portfolio <i class="far fa-angle-down" aria-hidden="true"></i></a>
                             <ul class="drop">
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
-                                <li><a href="#">Link</a></li>
+                                <li><a href="#">All Projects</a></li>
+                                <li><a href="#">Kitchen</a></li>
+                                <li><a href="#">Bathroom</a></li>
+                                <li><a href="#">Bedroom</a></li>
+                                <li><a href="#">Living Areas</a></li>
+                                <li><a href="#">Custom Homes</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Link</a></li>
                         <li class="trigger">
-                            <a href="#">Link  <i class="fal fa-caret-down" aria-hidden="true"></i></a>
+                            <a href="#">Services <i class="far fa-angle-down" aria-hidden="true"></i></a>
                             <ul class="drop">
-                                <li><a href="#">Drop Link</a></li>
-                                <li><a href="#">Drop Link</a></li>
-                                <li><a href="#">Drop Link</a></li>
+                                <li><a href="#">New Construction</a></li>
+                                <li><a href="#">Remodeling & Additions</a></li>
+                                <li><a href="#">Woodwork & Millwork</a></li>
+                                <li><a href="#">Historic Restoration</a></li>
+                                <li><a href="#">Testimonials</a></li>
                             </ul>
+                        </li>
+                        <li class="trigger">
+                            <a href="#">About Us <i class="far fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="drop">
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Sustainable Practices</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
                         </li>
                     </ul>
                 </nav>
+
+                <div class="header-buttons">
+                    <a href="#" class="button"><span>Start your project</span><i class="far fa-long-arrow-right"></i></a>
+                </div>
 
             </div>
         </div>
@@ -74,93 +97,164 @@
 
     <main role="main">
 
-        <section class="carousel">
-            <div class="container">
-
-                <div class="group">
-
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/1200x400/4e4e4e/FFFFFF/?text=1" alt="">
-                        <div class="info">
-                            <h1 class="title">Clouds</h1>
-                            <p class="desc">Subtext</p>
-                            <div class="buttons buttons-center">
-                                <a class="button">Button</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/1200x400/4e4e4e/FFFFFF/?text=1" alt="">
-                        <div class="info">
-                            <h1 class="title">Clouds</h1>
-                            <p class="desc">Subtext</p>
-                            <div class="buttons buttons-center">
-                                <a class="button">Button</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/1200x400/4e4e4e/FFFFFF/?text=1" alt="">
-                        <div class="info">
-                            <h1 class="title">Clouds</h1>
-                            <p class="desc">Subtext</p>
-                            <div class="buttons buttons-center">
-                                <a class="button">Button</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-        <section class="features">
+        <section class="impression">
             <div class="container">
                 <div class="group">
-
-                    <a href="#" class="item">
-                        <div class="image">
-                            <img src="https://via.placeholder.com/400x300/4e4e4e/FFFFFF/?text=1" alt="">
+                    <div class="details">
+                        <div class="text">
+                            <h1>Build Your Dream Home</h1>
+                            <p>Housewright Construction has built and remodeled custom dream homes since 1985.</p>
+                            <p>Let us help you do something with wood and metal.</p><br />
+                            <div class="buttons">
+                                <a href="#" class="button">Explore our work</a>
+                            </div>
                         </div>
-                        <div class="bar">
-                            <h3 class="title">Feature #1</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, neque!</p>
+                    </div>
+                    <div class="images">
+                        <div class="images-item">
+                            <div class="image">
+                                <img src="images/imp-2.jpg" alt="Impression 2">
+                            </div>
+                            <div class="label">
+                                <a href="#">Family Retreat -></a>
+                            </div>
                         </div>
-                    </a>
-
-                    <a href="#" class="item">
-                        <div class="image">
-                            <img src="https://via.placeholder.com/400x300/4e4e4e/FFFFFF/?text=2" alt="">
+                        <div class="images-item">
+                            <div class="image">
+                                <img src="images/imp-1.jpg" alt="Impression 1">
+                            </div>
+                            <div class="label">
+                                <a href="#">Family Retreat -></a>
+                            </div>
                         </div>
-                        <div class="bar">
-                            <h3 class="title">Feature #2</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, neque!</p>
+                        <div class="images-item">
+                            <div class="image">
+                                <img src="images/imp-0.jpg" alt="Impression 0">
+                            </div>
+                            <div class="label">
+                                <a href="#">Family Retreat -></a>
+                            </div>
                         </div>
-                    </a>
-
-                    <a href="#" class="item">
-                        <div class="image">
-                            <img src="https://via.placeholder.com/400x300/4e4e4e/FFFFFF/?text=3" alt="">
-                        </div>
-                        <div class="bar">
-                            <h3 class="title">Feature #3</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, neque!</p>
-                        </div>
-                    </a>
-
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="introduction">
+        <section class="banner-image">
             <div class="container">
+                <div class="decor decor-top">
+                    <div class="decor-squares">
+                        <span class="decor-square decor-square-1"></span>
+                        <span class="decor-square decor-square-2"></span>
+                        <span class="decor-square decor-square-3"></span>
+                        <span class="decor-square decor-square-4"></span>
+                        <span class="decor-square decor-square-5"></span>
+                        <span class="decor-square decor-square-6"></span>
+                        <span class="decor-square decor-square-7"></span>
+                        <span class="decor-square decor-square-8"></span>
+                        <span class="decor-square decor-square-9"></span>
+                        <span class="decor-square decor-square-10"></span>
+                        <span class="decor-square decor-square-11"></span>
+                        <span class="decor-square decor-square-12"></span>
+                        <span class="decor-square decor-square-13"></span>
+                        <span class="decor-square decor-square-14"></span>
+                        <span class="decor-square decor-square-15"></span>
+                        <span class="decor-square decor-square-16"></span>
+                        <span class="decor-square decor-square-17"></span>
+                        <span class="decor-square decor-square-18"></span>
+                    </div>
+                    <span class="decor-spacing"></span>
+                </div>
+                <div class="image">
+                    <img src="images/banner.jpg" alt="Bedroom">
+                    <div class="label">
+                        <a href="#">Project Name</a>
+                    </div>
+                </div>
+                <div class="decor decor-bottom">
+                    <span class="decor-spacing"></span>
+                    <div class="decor-squares">
+                        <span class="decor-square decor-square-1"></span>
+                        <span class="decor-square decor-square-2"></span>
+                        <span class="decor-square decor-square-3"></span>
+                        <span class="decor-square decor-square-4"></span>
+                        <span class="decor-square decor-square-5"></span>
+                        <span class="decor-square decor-square-6"></span>
+                        <span class="decor-square decor-square-7"></span>
+                        <span class="decor-square decor-square-8"></span>
+                        <span class="decor-square decor-square-9"></span>
+                        <span class="decor-square decor-square-10"></span>
+                        <span class="decor-square decor-square-11"></span>
+                        <span class="decor-square decor-square-12"></span>
+                        <span class="decor-square decor-square-13"></span>
+                        <span class="decor-square decor-square-14"></span>
+                        <span class="decor-square decor-square-15"></span>
+                        <span class="decor-square decor-square-16"></span>
+                        <span class="decor-square decor-square-17"></span>
+                        <span class="decor-square decor-square-18"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <h1>Design</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate <a href="#">doloremque</a> beatae, fugiat, fuga possimus velit et dolorem. Esse reiciendis dolor corrupti. Optio non neque quas dolorum velit, sit vero esse ratione voluptate dignissimos eos nisi cumque cum hic ipsam consectetur eveniet reprehenderit. Enim perspiciatis, quasi ratione iste! Rerum, molestiae unde.</p>
+        <section class="services">
+            <div class="container">
+                <div class="group">
 
+                    <div class="services-item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="images/demo/beach.jpg" alt="Beach">
+                            </div>
+                            <div class="details">
+                                <h3>New Construction</h3>
+                                <div class="arrow">
+                                    <i class="far fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services-item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="images/demo/beach.jpg" alt="Beach">
+                            </div>
+                            <div class="details">
+                                <h3>Remodeling & Additions</h3>
+                                <div class="arrow">
+                                    <i class="far fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services-item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="images/demo/beach.jpg" alt="Beach">
+                            </div>
+                            <div class="details">
+                                <h3>Woodwork & Millwork</h3>
+                                <div class="arrow">
+                                    <i class="far fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services-item">
+                        <a href="#">
+                            <div class="image">
+                                <img src="images/demo/beach.jpg" alt="Beach">
+                            </div>
+                            <div class="details">
+                                <h3>Historic Restoration</h3>
+                                <div class="arrow">
+                                    <i class="far fa-arrow-right"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -215,14 +309,6 @@
 
 
                 </div>
-            </div>
-        </section>
-
-        <section class="instagram">
-            <div class="container">
-                <h2 class="heading">Instagram Feed</h2>
-                <script src="https://apps.elfsight.com/p/platform.js" defer async></script>
-                <div class="elfsight-app-2e580992-8c92-4eca-a1cb-5d82031ec9cb"></div>
             </div>
         </section>
 
@@ -282,7 +368,7 @@
 
             <div class="group footer-group footer-copyright">
 
-                <div class="copyright" role="contentinfo">&copy; 2020 *Site Name*. All Rights
+                <div class="copyright" role="contentinfo">&copy; 2020 Housewright. All Rights
                     Reserved.</div>
 
                 <div class="social-icons">
@@ -309,6 +395,7 @@
     <!-- External Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fade@1.0.0/flickity-fade.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.6/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
 

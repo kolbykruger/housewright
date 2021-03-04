@@ -1,4 +1,5 @@
 .nav {
+    flex: 4;
     text-align: center;
     user-select: none;
     z-index: 10;
@@ -23,8 +24,8 @@
             overflow: hidden;
 
             a {
-                @include fs(13px);
-                padding: 10px;
+                @include fs(14px);
+                padding: 1em;
                 margin: 0;
 
                 &:hover,
@@ -39,16 +40,17 @@
         display: flex;
         flex-flow: row wrap;
         align-items: center;
+        justify-content: center;
 
         > li {
             margin: 0 0 0 32px;
         }
 
-        li:last-child ul {
-            left: auto;
-            right: 0;
-            text-align: right;
-        }
+        // li:last-child ul {
+        //     left: auto;
+        //     right: 0;
+        //     text-align: right;
+        // }
     }
 
     li {
@@ -70,11 +72,12 @@
     }
 
     a {
-        @include fs(16px);
+        @include fs(20px);
         display: block;
         color: $color-0;
         text-decoration: none;
         transition: $transition-1;
+        font-weight: 600;
 
         &:hover,
         &:focus {

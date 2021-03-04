@@ -1,17 +1,26 @@
 .header {
+    background: #fff;
+    margin-bottom: 0;
+    border-bottom: 2px solid $color-grey-1;
 
     .container {
         position: relative;
-        max-width: $container-width;
+        max-width: 100%;
         width: 100%;
+        padding: 1em 2em;
     }
 
     .group {
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
     }
 
     .logo {
+
+        &-wrapper {
+            flex: 1;
+        }
+
         width:100%;
         max-width: 240px;
 
@@ -22,6 +31,12 @@
         img {
             width: 100%;
         }
+    }
+
+    .header-buttons {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .mobile-icons {

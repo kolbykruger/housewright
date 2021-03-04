@@ -1,0 +1,40 @@
+.services {
+
+    .container {
+
+    }
+
+    .group {
+
+    }
+
+    &-item {
+        width: calc(50% - 4em);
+        margin: 2em;
+
+        &:nth-of-type(even) {
+            margin-top: 6em;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .details {
+            display: flex;
+            align-items: center;
+            padding-left: 1em;
+            margin-top: -1.5em;
+
+            h3 {
+                width: auto;
+                font-size: 1.5vw;
+            }
+
+            .arrow {
+                margin-left: 1em;
+            }
+        }
+    }
+}

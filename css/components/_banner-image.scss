@@ -1,0 +1,136 @@
+$decor-square-size: 6.6vw;
+
+.banner-image {
+    position: relative;
+    max-height: 90vh;
+    margin: 15vh auto 8vh;
+    overflow: hidden;
+
+    &.active {
+        .decor {
+            &-top,
+            &-bottom {
+                .decor-squares > .decor-square {
+                    animation: decor-enter 1s ease forwards;
+                }
+            }
+
+            @keyframes decor-enter {
+                to {
+                    transform: none;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .image {
+        img {
+            height: 90vh;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .label {
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+
+    .decor {
+        position: absolute;
+        display: flex;
+
+        &-squares {
+            flex: 2;
+            display: grid;
+            grid-template-columns: repeat(6, $decor-square-size);
+            grid-template-rows: repeat(3, $decor-square-size);
+            grid-auto-flow: dense;
+        }
+
+        &-spacing {
+            display: block;
+            flex: 3;
+        }
+
+        &-square {
+            display: block;
+            width: $decor-square-size;
+            height: $decor-square-size;
+            opacity: 0;
+        }
+
+        &-top {
+            top: 0;
+            left: 0;
+
+            .decor-square {
+
+                &-1,
+                &-2 {
+                    background: #fff;
+                    transform: translateY(-#{$decor-square-size});
+                }
+
+                &-3,
+                &-4,
+                &-7,
+                &-8 {
+                    background: rgba(255, 255, 255, 0.9);
+                    transform: translateY(-#{$decor-square-size * 2});
+                }
+
+                &-5,
+                &-6,
+                &-9,
+                &-10,
+                &-13,
+                &-14 {
+                    background: rgba(255, 255, 255, 0.6);
+                    transform: translateY(-#{$decor-square-size * 3});
+                }
+            }
+        }
+
+        &-bottom {
+            bottom: 0;
+            right: 0;
+
+            .decor-square {
+
+                &-5,
+                &-6,
+                &-9,
+                &-10,
+                &-13,
+                &-14 {
+                    background: rgba(255, 255, 255, 0.6);
+                    transform: translateY(#{$decor-square-size * 3});
+                }
+
+                &-11,
+                &-12,
+                &-15,
+                &-16 {
+                    background: rgba(255, 255, 255, 0.9);
+                    transform: translateY(#{$decor-square-size * 2});
+                }
+
+                &-17,
+                &-18 {
+                    background: #fff;
+                    transform: translateY(#{$decor-square-size});
+                }
+
+            }
+        }
+    }
+}
