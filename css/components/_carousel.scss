@@ -1,8 +1,11 @@
 .carousel {
     user-select: none;
+    max-height: 100vh;
+    overflow: hidden;
 
     .container {
         padding: 0;
+        max-width: 100%;
     }
 
     .group {
@@ -16,6 +19,7 @@
     .slide {
         user-select: none;
         width: 100%;
+        max-height: 100vh;
         position: relative;
         outline: none;
 
@@ -27,23 +31,40 @@
         img {
             user-select: none;
             width: 100%;
-            height: auto;
+            height: 100vh;
+            object-fit: cover;
         }
 
         .info {
             position: absolute;
             width: 100%;
             bottom: 0;
+            top: calc(7.65em / 2);
             left: 0;
             color: #fff;
             padding: 2em;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .title {
-            margin: 0;
-            @include fluid('font-size', 1.75rem, 3rem);
+            @include fluid('font-size', 1.75rem, 5rem);
             font-weight: 600;
+            text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.05), 0px -5px 35px rgba(0, 0, 0, 0.08);
+            animation: carousel-title-enter 1s forwards;
+            animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+            @keyframes carousel-title-enter {
+                from {
+                    opacity: 0;
+                    transform: translate(0, 1em) skewY(5deg);
+                } to {
+                    opacity: 1;
+                    transform: translate(0, 0) skewY(0deg);
+                }
+            }
         }
 
         .description {

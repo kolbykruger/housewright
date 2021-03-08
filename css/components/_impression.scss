@@ -1,9 +1,8 @@
 .impression {
-    margin-bottom: 0;
+    padding: 3em 0;
     //box-shadow: $box-shadow-3;
 
     .container {
-        max-width: 100%;
         padding: 0;
     }
 
@@ -11,35 +10,32 @@
         align-items: center;
     }
 
-    .flickity-viewport {
-        width: 100%;
-    }
-
     .details {
-        flex: 2;
+        flex: 3;
 
         .text {
-            padding: 10vw;
+            padding: 4vw;
+
+            .description {
+                margin: 2em 0;
+            }
         }
     }
 
-    .images {
-        flex: 3;
+    .image {
+        flex: 2;
 
-        .images-item {
-            position: relative;
+        svg {
             width: 100%;
 
-            .label {
-                position: absolute;
-                bottom: 1em;
-                right: 1em;
-                font-size: 1.25rem;
-
-                a {
-                    text-decoration: none;
-                    color: #fff;
-                }
+            .cls-1 {
+                fill: none;
+            }
+            .cls-2 {
+                clip-path: url(#clip-path);
+            }
+            image {
+                transform: translate(13%, 0) scale(0.19);
             }
         }
     }

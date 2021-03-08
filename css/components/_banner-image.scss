@@ -3,7 +3,6 @@ $decor-square-size: 6.6vw;
 .banner-image {
     position: relative;
     max-height: 90vh;
-    margin: 15vh auto 8vh;
     overflow: hidden;
 
     &.active {
@@ -37,9 +36,29 @@ $decor-square-size: 6.6vw;
         }
 
         .label {
+            @include fluid('font-size', 1.5rem, 2.5rem);
+            position: absolute;
+            bottom: 0.5em;
+            left: 0.5em;
+
             a {
                 text-decoration: none;
                 color: #fff;
+
+                &:hover,
+                &:focus {
+                    i {
+                        transform: translate(0, 0);
+                        opacity: 0.8;
+                    }
+                }
+            }
+
+            i {
+                transition: 800ms cubic-bezier(0.645, 0.045, 0.355, 1);
+                margin-left: 1em;
+                opacity: 0;
+                transform: translate(-1em, 0);
             }
         }
     }
@@ -73,7 +92,6 @@ $decor-square-size: 6.6vw;
             left: 0;
 
             .decor-square {
-
                 &-1,
                 &-2 {
                     background: #fff;
@@ -86,6 +104,7 @@ $decor-square-size: 6.6vw;
                 &-8 {
                     background: rgba(255, 255, 255, 0.9);
                     transform: translateY(-#{$decor-square-size * 2});
+                    backdrop-filter: blur(6px);
                 }
 
                 &-5,
@@ -96,6 +115,7 @@ $decor-square-size: 6.6vw;
                 &-14 {
                     background: rgba(255, 255, 255, 0.6);
                     transform: translateY(-#{$decor-square-size * 3});
+                    backdrop-filter: blur(3px);
                 }
             }
         }
@@ -105,7 +125,6 @@ $decor-square-size: 6.6vw;
             right: 0;
 
             .decor-square {
-
                 &-5,
                 &-6,
                 &-9,
@@ -114,6 +133,7 @@ $decor-square-size: 6.6vw;
                 &-14 {
                     background: rgba(255, 255, 255, 0.6);
                     transform: translateY(#{$decor-square-size * 3});
+                    backdrop-filter: blur(3px);
                 }
 
                 &-11,
@@ -122,6 +142,7 @@ $decor-square-size: 6.6vw;
                 &-16 {
                     background: rgba(255, 255, 255, 0.9);
                     transform: translateY(#{$decor-square-size * 2});
+                    backdrop-filter: blur(6px);
                 }
 
                 &-17,
@@ -129,7 +150,6 @@ $decor-square-size: 6.6vw;
                     background: #fff;
                     transform: translateY(#{$decor-square-size});
                 }
-
             }
         }
     }

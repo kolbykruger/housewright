@@ -1,14 +1,13 @@
 .footer {
     width: 100%;
-    background: $color-grey-2;
-    margin: 1em 0 0;
+    background: #fff;
+    padding: 3em 0 1em;
 
     .container {
-
     }
 
     .group {
-        margin-top: 3em;
+        margin-top: 5em;
     }
 
     &-logo {
@@ -17,7 +16,7 @@
 
         img {
             width: 100%;
-            max-width: 100px;
+            max-width: 200px;
         }
     }
 
@@ -43,7 +42,6 @@
         padding: 0;
 
         li {
-
         }
 
         a {
@@ -63,9 +61,18 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-top: 3em;
-        padding-top: 2em;
-        border-top: 1px solid #ddd;
+        padding-top: 3em;
+        border-top: 1px solid $color-grey-1;
+    }
+
+    .badges {
+        display: flex;
+        align-items: flex-end;
+
+        img {
+            max-width: 100px;
+            margin-left: 3px;
+        }
     }
 
     .ewd {
