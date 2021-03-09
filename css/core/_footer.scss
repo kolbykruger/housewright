@@ -10,6 +10,10 @@
         margin-top: 5em;
     }
 
+    &-group {
+        align-items: flex-end;
+    }
+
     &-logo {
         flex: 1;
         padding-right: 5em;
@@ -25,7 +29,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: flex-end;
     }
 
     &-section {
